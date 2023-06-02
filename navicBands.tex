@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage{amssymb, amsfonts,amsthm,amsmath}
+%\usepackage{enumitem}
+\usepackage{hyperref,xcolor}
+
+\def\inputGnumericTable{}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+
+
+
+\begin{document}
+\title{Details of the NavIC frequency bands }
+\author{\Large Shreyash Putta - FWC22070}
+\date{}
+
+\maketitle
+
+\section{NavIC frequency bands}
+		The seven satellites in the NavIC constellation so far use two frequencies for providing positioning data — the L5 and S bands. The new satellites NVS-01 onwards, meant to replace these satellites, will also have L1 frequency.
+		
+	\begin{table}[h!]
+	\small
+	\centering
+	\caption{the navic frequency bands}
+	\label{bands}
+	%\subimport{table/}{table1.tex}
+	\input{Table/table}
+	\end{table}
+
+\subsection*{There will be two kinds of services:}
+		
+
+		\subsection{Special Positioning Service (SPS)}
+		\subsection{Precision Service (PS)}
+Both services will be carried on L5 (1176.45 MHz) and S band (2492.028 MHz). The navigation signals would be transmitted in the S-band frequency and broadcast through a phased array antenna to keep required coverage and signal strength.
+\\
+\\
+The data structure for SPS and PS takes advantage of the fact that the number of satellites is reduced -7 instead of the 30 used in other constellations- to broadcast ionospheric corrections for a grid of 80 points to provide service to single frequency users. The clock, ephemeris, almanac data of the 7 IRNSS satellites are transmitted with the same accuracy as in legacy GPS, GLONASS and Galileo.
+\\
+\\
+navic operated only in the L5-band and S-band frequencies. This was because India hadn't received the International Telecommunication Union authorisation for using the L1 and L2 frequency bands, which are widely used worldwide for navigation services.
+\\
+\\
+Now that L1 band is available on the NVS-01 satellite(and will be available on subsequent NVS satellites), it is an interoperable frequency and can be used across all chipsets(of mobile devices), provided they use our signal architecture
+\end{document}
